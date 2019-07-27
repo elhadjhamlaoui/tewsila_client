@@ -1,0 +1,111 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowTranslucentStatus">false</item>
+
+    </style>
+    <style name="picker" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:textColorPrimary">@color/accent</item>
+
+
+    </style>
+    <style name="full_screen_dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+    </style>
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+    <style name="button" parent="ThemeOverlay.AppCompat">
+
+
+        <item name="colorAccent">@color/head</item>
+        <item name="android:colorBackground">@color/head</item>
+
+
+    </style>
+
+
+
+    <style name="Custom.EditText" parent="Base.Widget.AppCompat.EditText">
+        <item name="colorControlNormal">#ffffff</item>
+        <item name="colorControlHighlight">@color/colorAccent</item>
+        <item name="colorControlActivated">@color/colorAccent</item>
+    </style>
+
+
+    <style name="MAIN" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowTranslucentStatus">false</item>
+
+
+
+    </style>
+
+    <style name="LOGIN" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowTranslucentStatus">false</item>
+
+
+    </style>
+
+    <style name="AppTheme.Picker" parent="Theme.AppCompat.Light.NoActionBar" >
+        <item name="android:textColorPrimary">@android:color/white</item>
+    </style>
+    <style name="AppTheme.Dark" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/accent</item>
+
+        <item name="android:windowBackground">@color/colorPrimary</item>
+
+        <item name="colorControlNormal">@color/iron</item>
+        <item name="colorControlActivated">@color/white</item>
+        <item name="colorControlHighlight">@color/white</item>
+        <item name="android:textColorHint">@color/iron</item>
+
+        <item name="colorButtonNormal">@color/primary_darker</item>
+
+    </style>
+
+    <style name="AppTheme.Dark.Dialog" parent="Theme.AppCompat.Dialog">
+        <item name="colorAccent">@color/white</item>
+        <item name="android:textColorPrimary">@color/iron</item>
+        <item name="android:background">@color/colorPrimary</item>
+    </style>
+    <style name="ebutton" parent="ThemeOverlay.AppCompat">
+
+
+        <item name="colorAccent">@android:color/holo_red_dark</item>
+        <item name="android:colorBackground">@android:color/holo_red_dark</item>
+
+
+    </style>
+    <style name="tbutton" parent="ThemeOverlay.AppCompat">
+
+
+        <item name="colorAccent">@color/colorPrimaryDark</item>
+        <item name="android:colorBackground">@color/colorPrimaryDark</item>
+
+
+
+    </style>
+    <style name="orangebutton" parent="ThemeOverlay.AppCompat">
+
+
+        <item name="colorAccent">#FFFBB814</item>
+        <item name="android:colorBackground">#FFFBB814</item>
+
+
+    </style>
+</resources>

@@ -1,0 +1,234 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@drawable/bac">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="200dp"
+                    android:layout_height="100dp"
+                    android:layout_centerHorizontal="true"
+                    app:srcCompat="@drawable/header" />
+
+                <CheckBox
+                    android:id="@+id/checkBox"
+                    style="@android:style/Widget.DeviceDefault.Light.CompoundButton.CheckBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_below="@+id/relativeLayout4"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="30dp"
+                    android:checked="false"
+                    android:textColor="@color/cardview_light_background"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/textView40"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/checkBox"
+                    android:layout_marginBottom="5dp"
+                    android:layout_toEndOf="@+id/checkBox"
+                    android:text="@string/accept_terms"
+                    android:textColor="@color/cardview_light_background"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/termstext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/checkBox"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_toEndOf="@+id/textView40"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:maxLines="1"
+                    android:text="@string/terms"
+                    android:textColor="@color/cardview_light_background"
+                    android:textSize="15sp" />
+
+                <RelativeLayout
+                    android:id="@+id/relativeLayout4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/relativeLayout6"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp">
+
+                    <EditText
+                        android:id="@+id/email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:drawableLeft="@drawable/ic_email_white_24dp"
+                        android:drawablePadding="10dp"
+                        android:ems="10"
+                        android:hint="@string/email"
+                        android:imeOptions="actionDone"
+                        android:inputType="textEmailAddress"
+                        android:textColor="@color/accent"
+                        android:textColorHint="@color/cardview_light_background"
+                        android:textSize="14sp"
+                        android:theme="@style/Custom.EditText" />
+
+                    <EditText
+                        android:id="@+id/etPassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/email"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:drawableLeft="@drawable/ic_lock_outline_white_24dp"
+                        android:drawablePadding="10dp"
+                        android:ems="10"
+                        android:hint="@string/register_password"
+                        android:imeOptions="actionDone"
+                        android:inputType="textPassword"
+                        android:maxLines="1"
+                        android:textColor="@color/accent"
+                        android:textColorHint="@color/cardview_light_background"
+                        android:textSize="14sp"
+                        android:theme="@style/Custom.EditText"
+                        android:visibility="gone" />
+
+                    <RelativeLayout
+                        android:id="@+id/etGender"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/etPassword"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="10dp"
+                        android:clickable="true"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:id="@+id/gender"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginStart="10dp"
+                            android:text="@string/gender"
+                            android:textColor="@color/cardview_light_background" />
+
+                        <View
+                            android:id="@+id/space"
+
+                            android:layout_width="match_parent"
+                            android:layout_height="1.5dp"
+                            android:layout_below="@+id/gender"
+                            android:background="@color/accent"
+
+                            />
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/relativeLayout6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/imageView4"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp">
+
+                    <EditText
+
+                        android:id="@+id/etFirstname"
+
+
+                        android:layout_width="match_parent"
+
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+
+
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+
+
+                        android:layout_marginTop="5dp"
+                        android:drawableLeft="@drawable/ic_person_white_24dp"
+                        android:drawablePadding="10dp"
+                        android:hint="@string/firstname"
+                        android:imeOptions="actionNext"
+                        android:inputType="textPersonName"
+                        android:maxLines="1"
+                        android:textColor="@color/accent"
+                        android:textColorHint="@color/cardview_light_background"
+                        android:textSize="14sp"
+                        android:theme="@style/Custom.EditText" />
+
+                    <EditText
+
+                        android:id="@+id/etFamilyname"
+
+
+                        android:layout_width="match_parent"
+
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+
+
+                        android:layout_below="@+id/etFirstname"
+                        android:layout_marginLeft="10dp"
+
+
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="5dp"
+                        android:drawableLeft="@drawable/ic_person_white_24dp"
+                        android:drawablePadding="10dp"
+                        android:hint="@string/familyname"
+                        android:imeOptions="actionNext"
+                        android:inputType="textPersonName"
+                        android:maxLines="1"
+                        android:textColor="@color/accent"
+                        android:textColorHint="@color/cardview_light_background"
+                        android:textSize="14sp"
+                        android:theme="@style/Custom.EditText" />
+                </RelativeLayout>
+
+                <Button
+                    android:id="@+id/btRegister"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="false"
+                    android:layout_below="@+id/checkBox"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="40dp"
+                    android:background="@drawable/btn"
+                    android:text="@string/bregister"
+                    android:textColor="@color/bluetext" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

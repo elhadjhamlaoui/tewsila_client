@@ -1,0 +1,12 @@
+JvmtiExport can_access_local_variables 0
+JvmtiExport can_hotswap_or_post_breakpoint 0
+JvmtiExport can_post_on_exceptions 0
+# 271 ciObject found
+ciMethod java/lang/Object <init> ()V 4097 1 404979 0 0
+ciMethod java/lang/Object getClass ()Ljava/lang/Class; 2049 1 256 0 -1
+ciMethod java/lang/Object equals (Ljava/lang/Object;)Z 4097 1 5666 0 -1
+ciMethod java/util/Collection iterator ()Ljava/util/Iterator; 0 0 1 0 -1
+ciMethod java/util/List iterator ()Ljava/util/Iterator; 0 0 1 0 -1
+ciMethod java/util/AbstractList <init> ()V 569 1 51713 0 32
+ciMethod  297 1 68494 0 32
+ciMethod  72

@@ -1,0 +1,64 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+
+        <item
+            android:id="@+id/rides"
+            android:icon="@drawable/rides"
+            android:title= "@string/ridestitle" />
+        <item
+            android:title=""
+            android:enabled="false" >
+        </item>
+        <item
+            android:id="@+id/settings"
+            android:icon="@drawable/settings"
+            android:title="@string/settings" />
+        <item
+            android:title=""
+            >
+            <menu>
+                <group android:checkableBehavior="single">
+                    <item
+                        android:id="@+id/navshare"
+                        android:icon="@drawable/ic_share_white_24dp"
+                        android:title="@string/share" />
+                    <item
+                        android:id="@+id/navdriver"
+                        android:icon="@drawable/ic_local_taxi_black_24dp"
+                        android:title="@string/become_driver" />
+                    <item
+                        android:id="@+id/contact"
+                        android:icon="@drawable/contact"
+                        android:title="@string/contactus" />
+
+                </group>
+
+            </menu>
+        </item>
+
+
+
+
+        <item
+            android:title=""
+            >
+
+            <menu>
+                <group android:checkableBehavior="single">
+                    <item
+                        android:id="@+id/navlogout"
+                        android:icon="@drawable/logout"
+                        android:title="@string/logout" />
+
+                </group>
+            </menu>
+        </item>
+
+
+
+
+
+    </group>
+</menu>

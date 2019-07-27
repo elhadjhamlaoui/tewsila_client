@@ -1,0 +1,73 @@
+{
+  "project_info": {
+    "project_number": "883945683456",
+    "firebase_url": "https://tewsila-1cef9.firebaseio.com",
+    "project_id": "tewsila-1cef9",
+    "storage_bucket": "tewsila-1cef9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:883945683456:android:0d8aa11d8b843cc1",
+        "android_client_info": {
+          "package_name": "com.tewsila.client"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "883945683456-j0r9i4kntv5nk8pi6p0tlm0kpfcd8f6o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA0C_nwJgvhdt1OjqKTXp88Ky-sopAXbmM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:883945683456:android:976bbd4c7eb7cce0",
+        "android_client_info": {
+          "package_name": "com.tewsila.driver"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "883945683456-j0r9i4kntv5nk8pi6p0tlm0kpfcd8f6o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA0C_nwJgvhdt1OjqKTXp88Ky-sopAXbmM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

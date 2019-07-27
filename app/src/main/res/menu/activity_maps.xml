@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+
+            <item android:id="@+id/ssearch"
+                android:title="@string/search"
+                android:icon="@android:drawable/ic_menu_search"
+                app:showAsAction="always"
+                app:actionViewClass="android.support.v7.widget.SearchView" />
+            <group android:id="@+id/groupmaptype"
+                android:checkableBehavior="single">
+                <item android:id="@+id/maptypeNORMAL"
+                    android:title="NORMAL" />
+                <item android:id="@+id/maptypeSATELLITE"
+                    android:title="SATELLITE" />
+                <item android:id="@+id/maptypeTERRAIN"
+                    android:title="TERRAIN" />
+                <item android:id="@+id/maptypeHYBRID"
+                    android:title="HYBRID" />
+                <item android:id="@+id/maptypeNONE"
+                    android:title="NONE" />
+
+            </group>
+
+
+</menu>

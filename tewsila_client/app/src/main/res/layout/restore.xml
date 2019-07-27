@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+    android:orientation="vertical">
+
+<!-- The ActionBar displayed at the top -->
+<include
+    layout="@layout/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" />
+
+<!-- The main content view where fragments are loaded -->
+    <RelativeLayout
+        android:id="@+id/restore"
+        android:layout_width="match_parent"
+
+        android:layout_height="match_parent"
+        android:background="@drawable/bac">
+
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/restore" />
+
+        <EditText
+
+            android:id="@+id/editText7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/imageView7"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="30dp"
+            android:ems="10"
+            android:hint="@string/email"
+            android:imeOptions="actionNext"
+            android:inputType="textEmailAddress"
+            android:maxLines="1"
+            android:textColor="@color/accent"
+            android:textColorHint="@color/accent" />
+
+        <Button
+            android:id="@+id/button17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editText8"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/btn"
+            android:text="@string/send"
+            android:textColor="@color/bluetext" />
+
+        <EditText
+            android:id="@+id/editText8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/editText7"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:hint="@string/phone"
+            android:imeOptions="actionDone"
+            android:inputType="phone"
+            android:maxLines="1"
+            android:textColor="@color/accent"
+            android:textColorHint="@color/accent" />
+    </RelativeLayout>
+
+</LinearLayout>

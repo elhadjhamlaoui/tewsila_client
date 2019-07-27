@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="Gradle: com.instabug.library:instabug-features-request:8.0.7@aar">
+    <ANNOTATIONS>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/instabug-features-request-8.0.7.aar/f94077e725a1a8eecfc4b349b15d16f5/annotations.zip!/" />
+    </ANNOTATIONS>
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/instabug-features-request-8.0.7.aar/f94077e725a1a8eecfc4b349b15d16f5/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/instabug-features-request-8.0.7.aar/f94077e725a1a8eecfc4b349b15d16f5/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.instabug.library/instabug-features-request/8.0.7/d96beac4f83f088fdc6a25986083599e418a33aa/instabug-features-request-8.0.7-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

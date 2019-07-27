@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: com.instabug.library:instabug-survey:8.0.7@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/instabug-survey-8.0.7.aar/b2241a5964c3dc2240762213cffc9bf1/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/instabug-survey-8.0.7.aar/b2241a5964c3dc2240762213cffc9bf1/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.instabug.library/instabug-survey/8.0.7/c5015bd2fccce71d6a7823c087e8b1417fb498b3/instabug-survey-8.0.7-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

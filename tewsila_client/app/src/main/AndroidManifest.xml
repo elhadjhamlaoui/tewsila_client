@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.tewsila.client">
+
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality. 
+    -->
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE"/>
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/tewsila"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+
+        android:windowSoftInputMode="stateVisible|adjustPan"
+        android:largeHeap="true"
+        android:name="android.support.multidex.MultiDexApplication"
+
+         >
+
+        <meta-data android:name="com.facebook.accountkit.ApplicationName"
+            android:value="@string/app_name" />
+
+
+        <meta-data android:name="com.facebook.accountkit.ClientToken"
+            android:value="@string/ACCOUNT_KIT_CLIENT_TOKEN" />
+        <meta-data android:name="com.facebook.accountkit.FacebookAppEventsEnabled"
+            android:value="false"/>
+        <activity
+            android:name="com.facebook.accountkit.ui.AccountKitActivity"
+            />
+        <uses-library android:name="com.google.android.maps" />
+        <meta-data android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="8a47de80b890548a1d7e325090ef620616035083"
+            />
+        <meta-data xmlns:tools="http://schemas.android.com/tools"
+            tools:replace="android:value"
+            android:name="android.support.VERSION"
+            android:value="26.1.0" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+
+        <meta-data android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id"/>
+
+        <activity android:name="com.facebook.FacebookActivity"
+            android:configChanges=
+                "keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="@string/fb_login_protocol_scheme" />
+            </intent-filter>
+        </activity>
+
+
+
+        <activity
+            android:name=".splash"
+            android:screenOrientation="portrait"
+            android:theme="@style/LOGIN">
+
+
+
+        </activity>
+        <activity
+            android:name=".BaseActivity"
+            >
+
+
+
+        </activity>
+        <activity
+            android:name=".intro"
+            android:screenOrientation="portrait"
+            android:theme="@style/LOGIN">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+
+        </activity>
+        <activity
+            android:name="com.tewsila.client.MapsActivity"
+            android:label="@string/app_name"
+            android:launchMode= "singleTask"
+
+
+            android:windowSoftInputMode="adjustPan"
+            android:theme="@style/MAIN"
+
+            android:screenOrientation="portrait"
+            >
+
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <meta-data android:name="android.app.searchable"
+                android:resource="@xml/searchable"
+
+                />
+            <meta-data
+                android:name="android.app.default_searchable"
+                android:value=".SearchActivity" />
+        </activity>
+
+        <activity android:name="com.tewsila.client.changepass"
+
+
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            />
+        <activity android:name="com.tewsila.client.Settings"
+
+
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            />
+        <activity android:name="com.tewsila.client.editActivity"
+
+
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            />
+        <activity android:name="com.tewsila.client.report"
+
+
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            />
+
+        <activity android:name="com.tewsila.client.restore"
+
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+
+            />
+        <activity android:name="com.tewsila.client.LoginActivity"
+            android:theme="@style/LOGIN"
+
+            android:screenOrientation="portrait"
+
+            >
+
+        </activity>
+        <activity android:name="com.tewsila.client.extras"
+               android:theme="@style/AppTheme"
+            android:screenOrientation="portrait"
+
+            />
+
+
+
+
+
+        <activity
+            android:name=".rides"
+            android:label="@string/ridestitle"
+            android:theme="@style/AppTheme"
+            android:launchMode= "singleTask"
+
+            >
+
+
+        </activity>
+
+        <activity android:name="com.tewsila.client.dialog"
+
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+
+            />
+
+
+
+        <receiver android:name="com.tewsila.client.AlarmReceiver2"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"></action>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.tewsila.client.AlarmReceiver3"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"></action>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.tewsila.client.AlarmReceiver1"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"></action>
+            </intent-filter>
+        </receiver>
+
+        <receiver android:name=".SmsReceiver">
+            <intent-filter>
+                <action android:name="android.provider.Telephony.SMS_RECEIVED"/>
+            </intent-filter>
+        </receiver>
+    <application
+        android:name=".ipaddress"
+        tools:ignore="WrongManifestParent">
+    </application>
+
+        <receiver
+            android:name=".AlarmReceiver"
+            android:enabled="true"
+            android:exported="false"
+
+            >
+
+        </receiver>
+
+
+        <service
+            android:name=".locationservice"
+            android:enabled="true"
+            android:exported="false"
+            android:stopWithTask="true"
+            ></service>
+
+        <service
+            android:name=".jobservice"
+            android:enabled="true"
+            android:exported="true"
+
+            >
+            <intent-filter>
+                <action android:name="com.firebase.jobdispatcher.ACTION_EXECUTE"/>
+            </intent-filter>
+        </service>
+        <service
+            android:name=".MyFirebaseMessagingService"
+            android:enabled="true"
+            android:exported="true"
+            >
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <service
+            android:name=".MyFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+            </intent-filter>
+        </service>
+
+    </application>
+
+</manifest>

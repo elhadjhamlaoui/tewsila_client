@@ -1,0 +1,82 @@
+
+<android.support.v4.widget.SwipeRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/swiperefresh"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/background_light"
+        tools:context="com.tewsila.neo.pager.rides$PlaceholderFragment">
+
+
+        <ListView
+            android:id="@+id/listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:divider="@null"
+
+            />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="20dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:clickable="true"
+            android:visibility="gone"
+            app:backgroundTint="@color/colorPrimary"
+            app:elevation="3dp"
+            app:fabSize="normal"
+            app:srcCompat="@android:drawable/ic_popup_sync" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/showremove"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="false"
+            android:layout_margin="20dp"
+            android:clickable="true"
+            android:visibility="gone"
+            app:backgroundTint="@color/something"
+            app:elevation="3dp"
+            app:fabSize="normal"
+            app:srcCompat="@android:drawable/ic_menu_delete" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/breturn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="20dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginStart="10dp"
+            android:clickable="true"
+            android:visibility="invisible"
+            app:backgroundTint="@color/colorPrimary"
+            app:elevation="3dp"
+            app:fabSize="normal"
+            app:srcCompat="@android:drawable/ic_menu_revert" />
+
+
+    </RelativeLayout>
+
+</android.support.v4.widget.SwipeRefreshLayout>
+

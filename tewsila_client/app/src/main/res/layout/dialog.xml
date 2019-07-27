@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- The ActionBar displayed at the top -->
+    <include
+        layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <!-- The main content view where fragments are loaded -->
+    <RelativeLayout
+        android:id="@+id/car"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/accent">
+
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_alignParentBottom="false"
+            android:layout_alignParentEnd="false"
+            android:layout_alignParentTop="false"
+
+            android:layout_below="@+id/numberPicker55"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="false"
+            android:layout_marginTop="30dp"
+            android:animateLayoutChanges="false"
+            android:visibility="visible"
+            app:cardBackgroundColor="@color/cardview_light_background"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="5dp"
+            app:contentPadding="0dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:animateLayoutChanges="true"
+                android:orientation="horizontal"
+
+                android:visibility="visible">
+
+
+                <LinearLayout
+                    android:id="@+id/eco_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="10dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imageView15"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginStart="20dp"
+                        app:srcCompat="@drawable/eco" />
+
+                    <TextView
+                        android:id="@+id/eco"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginStart="20dp"
+                        android:gravity="center_horizontal"
+                        android:text="Economy" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/vip_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imageView16"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginStart="20dp"
+                        app:srcCompat="@drawable/vip" />
+
+                    <TextView
+                        android:id="@+id/vip"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginStart="20dp"
+                        android:gravity="center_horizontal"
+                        android:text="V.I.P" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <TextView
+            android:id="@+id/textView21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:text="@string/from"
+            android:textColor="@color/bluetext" />
+
+        <TextView
+            android:id="@+id/pickup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView21"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:maxLines="2"
+            android:text="pickup" />
+
+        <TextView
+            android:id="@+id/textView22"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/pickup"
+            android:layout_centerHorizontal="true"
+            android:text="@string/to"
+            android:textColor="@color/bluetext" />
+
+        <TextView
+            android:id="@+id/destination"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView22"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:maxLines="2"
+            android:text="destination" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="false"
+            android:layout_below="@+id/type"
+            android:layout_centerHorizontal="true"
+            android:layout_marginEnd="50dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/btn_blue"
+            android:text="@string/next"
+            android:textColor="@color/cardview_light_background" />
+
+        <NumberPicker
+            android:id="@+id/numberPicker55"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_below="@+id/destination"
+            android:layout_centerHorizontal="true"
+            android:layout_marginEnd="75dp"
+            android:layout_marginTop="10dp" />
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>
+
+

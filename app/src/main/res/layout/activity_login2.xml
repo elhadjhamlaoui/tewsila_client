@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+
+        <!-- This LinearLayout represents the contents of the screen  -->
+        <LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!-- The ActionBar displayed at the top -->
+    <include
+        layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+            <!-- The main content view where fragments are loaded -->
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/bac">
+
+                <Button
+                    android:id="@+id/bSignIn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="30dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginStart="20dp"
+                    android:background="@drawable/btn"
+                    android:text="@string/sign_in"
+                    android:textColor="@color/bluetext" />
+
+                <TextView
+                    android:id="@+id/tvRegisterLink"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_below="@+id/relativeLayout3"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/forgetpass"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/abc_primary_text_material_dark"
+                    android:textSize="14sp" />
+
+                <RelativeLayout
+                    android:id="@+id/relativeLayout5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true">
+
+                    <ImageView
+                        android:id="@+id/imageView5"
+                        android:layout_width="200dp"
+                        android:layout_height="100dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/header" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/relativeLayout3"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/relativeLayout5"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+
+                    <RelativeLayout
+                        android:id="@+id/r1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginStart="20dp"
+                        android:orientation="horizontal">
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/input"
+
+                            android:layout_width="match_parent"
+
+                            android:layout_height="wrap_content"
+                            android:textColorHint="@color/cardview_light_background">
+
+                            <EditText
+                                android:id="@+id/etUsername"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:drawableLeft="@drawable/ic_phone_white_24dp"
+                                android:drawablePadding="5dp"
+                                android:ems="10"
+                                android:hint="@string/phone"
+                                android:imeOptions="actionDone"
+                                android:includeFontPadding="false"
+                                android:inputType="phone"
+                                android:maxLength="10"
+                                android:maxLines="1"
+                                android:paddingLeft="7dp"
+                                android:textColor="@color/accent"
+                                android:textColorHint="@color/cardview_light_background"
+                                android:theme="@style/Custom.EditText" />
+                        </android.support.design.widget.TextInputLayout>
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/r2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/r1"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginStart="20dp"
+                        android:orientation="horizontal">
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/input2"
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+
+                            android:textColorHint="@color/cardview_light_background">
+
+                            <EditText
+                                android:id="@+id/etPassword"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:drawableLeft="@drawable/passwords"
+                                android:drawablePadding="10dp"
+                                android:ems="10"
+                                android:hint="@string/login_password"
+                                android:imeOptions="actionDone"
+                                android:inputType="textPassword"
+                                android:maxLines="1"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+                                android:textColor="@color/accent"
+                                android:textColorHint="@color/cardview_light_background"
+                                android:theme="@style/Custom.EditText" />
+
+                        </android.support.design.widget.TextInputLayout>
+
+                    </RelativeLayout>
+
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+

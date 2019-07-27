@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bac"
+    android:clickable="true"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/imageView14"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/smspicture" />
+
+    <TextView
+        android:id="@+id/textView47"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView14"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:text="@string/sms2"
+        android:textAlignment="center"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/cardview_light_background"
+        android:textSize="14sp"
+        android:textStyle="normal"
+        android:typeface="normal" />
+
+    <EditText
+        android:id="@+id/editText6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView47"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="80dp"
+        android:layout_marginRight="80dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="@string/verification2"
+        android:imeOptions="actionDone"
+        android:inputType="number"
+        android:maxLength="6"
+        android:maxLines="1"
+        android:textColor="@color/accent"
+        android:textColorHint="@color/accent"
+        android:theme="@style/Custom.EditText" />
+
+    <TextView
+        android:id="@+id/progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText6"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:textColor="@color/cardview_light_background" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/progress"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/resend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="false"
+            android:layout_centerHorizontal="false"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn"
+            android:clickable="true"
+            android:padding="-20dp"
+            android:text="@string/resendsms"
+            android:textColor="@color/bluetext" />
+
+        <Button
+            android:id="@+id/button21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="false"
+            android:layout_alignParentEnd="false"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn"
+            android:padding="-20dp"
+            android:text="@string/bconfirm"
+            android:textColor="@color/bluetext" />
+    </LinearLayout>
+
+</RelativeLayout>
